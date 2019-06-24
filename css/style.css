@@ -1,0 +1,156 @@
+body {
+    background-color: #e6f8f9;
+    font-family: 'Montserrat', serif;
+    line-height: 1.42857143;
+    margin: 0px;
+    text-align: center;
+}
+
+div {
+    margin: 0 0 0 0;
+}
+
+h1 {
+    color: #33cc33;
+    font-family: 'Sacramento', cursive;
+    font-size: 65px;
+    margin: 0 auto 0 auto;
+    width: 40%;
+}
+
+h2 {
+    color: #33cc33;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    width: 20%;
+    margin: auto;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    height: 2px;
+    border-color: grey;
+    border-style: dotted none none;
+    width: 5%;
+    border-width: 6px;
+    position: relative;
+    top: 80px;
+    bottom: 80px;
+    margin: 0 auto 0 auto;
+}
+
+
+span {
+    margin: 0px;
+    font-size: 20px;
+    color: #33cc33;
+
+}
+
+a {
+    text-decoration: none;
+    color: #33cc33;
+    margin: auto;
+}
+
+
+/*/////////////////////////CLASSES//////////////////////*/
+.top-container {
+    margin: 0 0 0 0;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+#life {
+    margin: 0 auto 0 auto;
+    width: 20%;
+
+}
+
+.mnt {
+    margin: 0 auto 0 auto;
+    position: relative;
+    bottom: -3px;
+    width: 86%;
+}
+
+.middle-container {
+    background-color: #fcf9ec;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.user_pic {
+    border-radius: 10%;
+    height: 180px;
+    margin: 20px;
+}
+
+.bottom-container {
+    background-color: #fcf9ec;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.insight {
+    margin: auto;
+    padding: 5px;
+    width: 50%;
+}
+
+#images {
+    margin: auto;
+    padding-top: 50px;
+    width: 80%;
+}
+
+.icons {
+    margin: 50px;
+    height: 180px;
+}
+
+.icons_jq {
+    height: 110px;
+    margin-bottom: 80px;
+}
+
+.foot-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    width: 50%;
+    margin: auto;
+}
+
+.head-container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin: 0px;
+}
+
+#nav-bar {
+    position: relative;
+    right: 130px;
+    padding: 10 0 10 0;
+    float: right;
+    margin: auto;
+}
+
+#nav-bar a {
+    font-size: 17px;
+    font-family: 'Montserrat', serif;
+    margin: 20px;
+    padding: 2px
+}
