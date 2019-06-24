@@ -26,10 +26,6 @@ h2 {
     margin: auto;
 }
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 hr {
     height: 2px;
     border-color: grey;
@@ -44,10 +40,9 @@ hr {
 
 
 span {
-    margin: 0px;
     font-size: 20px;
+    margin: 0px;
     color: #33cc33;
-
 }
 
 a {
@@ -66,9 +61,9 @@ a {
 }
 
 #life {
+    font-size: 20px;
     margin: 0 auto 0 auto;
     width: 20%;
-
 }
 
 .mnt {
