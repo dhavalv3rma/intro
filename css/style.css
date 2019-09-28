@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #e6f8f9;
     font-family: 'Montserrat', serif;
@@ -40,7 +44,7 @@ hr {
 
 
 span {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0px;
     color: #33cc33;
 }
@@ -144,8 +148,40 @@ a {
 }
 
 #nav-bar a {
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Montserrat', serif;
     margin: 20px;
     padding: 2px
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #33cc33;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 0 4px 4px 4px;
+    min-width: 140px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+#year {
+    font-size: 12px;
+    color: #333;
 }
