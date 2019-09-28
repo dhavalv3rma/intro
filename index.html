@@ -12,9 +12,14 @@
 <body>
     <header class="head-container">
         <div id="nav-bar">
-            <a href="index.html">About</a>
-            <a href="https://dhavalv3rma.github.io/frontlab/">Projects</a>
-            <a href="">Contact</a>
+            <a href="#about">About</a>
+            <div class="dropdown"><span>Projects</span>
+                <div class="dropdown-content">
+                    <a href="https://dhavalv3rma.github.io/frontlab/" target="_blank">Frontlab</a>
+                    <a href="http://www.boltztrade.com" target="_blank">Boltztrade</a>
+                </div>
+            </div>
+            <a href="#footer">Contact</a>
         </div>
     </header>
 
@@ -24,8 +29,7 @@
         <img class="mnt" src="images/mountains.png" alt="mountain-image">
     </div>
 
-
-    <div class="middle-container">
+    <div class="middle-container" id="about">
         <img class="user_pic " src="images/dt.jpg" alt="dhaval_image">
         <h2>Hi</h2>
         <div class="insight">
@@ -33,8 +37,6 @@
         </div>
         <hr>
     </div>
-
-
 
     <div class="bottom-container">
         <h2>What I can do</h2>
@@ -48,12 +50,19 @@
     </div>
 
     <footer>
-        <div class="foot-container">
+        <div class="foot-container" id="footer">
             <a href="mailto:dhavalverma@live.com" class="email-lnk">Hire me</a>
-            <p>© 2019 <a href="https://www.linkedin.com/in/dhaval-verma-919b66b9/">Dhaval Verma</a>. All rights reserved.</p>
+            <p>© <span id="year"></span> <a href="https://www.linkedin.com/in/dhaval-verma-919b66b9/" target="_blank">Dhaval Verma</a>. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        var dates = new Date()
+        var x = dates.getFullYear();
+        console.log(x);
+        $('#year').text(x);
+    </script>
+</body>
 
-
-</body></html>
+</html>
