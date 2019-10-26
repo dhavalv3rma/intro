@@ -6,6 +6,7 @@
     <title>Dhaval Verma - front-end designer/developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/fav.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
 </head>
 
@@ -58,10 +59,15 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
+        $(".dropdown").on('click', function() {
+            $(".dropdown-content").addClass("croto");
+        });
+
         var dates = new Date()
         var x = dates.getFullYear();
         console.log(x);
         $('#year').text(x);
+
     </script>
 </body>
 
