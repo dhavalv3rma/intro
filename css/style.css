@@ -55,6 +55,12 @@ a {
     margin: auto;
 }
 
+a:hover {
+    color: #EDE8D4;
+    font-weight: bolder;
+}
+
+
 
 /*/////////////////////////CLASSES//////////////////////*/
 .top-container {
