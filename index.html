@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhaval Verma - front-end designer/developer</title>
-    <script src="//code.tidio.co/gxrm9cvkeaowfwskcam9iwikb91qlzxv.js" async></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/fav.ico">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -16,8 +15,8 @@
 <body>
     <header class="head-container">
         <div id="nav-bar">
-            <a href="#about">About</a>
-            <div class="dropdown"><span>Projects</span>
+            <a class="glow" href="#about">About</a>
+            <div class="dropdown glow"><span>Projects</span>
                 <div class="dropdown-content">
                     <a href="https://www.optionmatrix.com/" target="_blank">Option Matrix</a>
                     <a href="https://www.dubaidryfruits.in/" target="_blank">Dubai Dry Fruits</a>
@@ -34,7 +33,7 @@
                     <a href="https://dhavalv3rma.github.io/tictactoe/" target="_blank">Tictactoe</a>
                 </div>
             </div>
-            <a href="#footer">Contact</a>
+            <a class="glow" href="#footer">Contact</a>
         </div>
     </header>
 
@@ -48,29 +47,43 @@
         <img class="user_pic " src="images/dt.png" alt="dhaval_image">
         <h2>Hi</h2>
         <div class="insight">
-            <p>Experienced developer with a demonstrated history of working in web development.
-                Skilled in HTML, CSS, JavaScript, jQuery, Bootstrap, Wordpress, Wireframes and responsive design.
-                <br><br> I have a passion for web designing and love to create for web. </p>
+            <p>I am an Experienced developer with a demonstrated history of working in web development.
+                Skilled in HTML, CSS(+Sass), JavaScript, jQuery, Angular, Bootstrap, Wordpress, Wireframes, responsive designs and many more.
+                <br><br> I have a passion for web development and love to create for web. </p>
         </div>
         <hr>
     </div>
 
     <div class="bottom-container">
         <h2>What I can do</h2>
+
         <div id="images">
-            <img title="Html" src="images/html.png" class="tooltip icons" alt="web_technologies">
-            <img title="Css" src="images/css.png" class="icons" alt="">
-            <img title="Javascript" src="images/js.png" class="icons" alt=""><br>
-            <img title="Bootstrap" src="images/bstrap.png" class="icons" alt="">
-            <img title="Wordpress" src="images/wp.png" class="icons" alt=""><br>
-            <img title="jQuery" src="images/jquery.png" class="icons_jq" alt="">
+            <div class="flex-container">
+                <img title="Html" src="images/html.png" class="tooltip icons" alt="web_technologies">
+                <img title="Css" src="images/css.png" class="icons" alt="">
+                <img title="Javascript" src="images/js.png" class="icons" alt="">
+            </div>
+            <h4>--------FRAMEWORKS & LIBRARIES--------</h4>
+            <div class="flex-container">
+                <img title="Bootstrap" src="images/bstrap.png" class="icons" alt="">
+                <img title="Sass" src="images/sass.png" class="icons" alt="">
+                <img title="Angular" src="images/angular.png" class="icons" alt="">
+                <img title="jQuery" src="images/jq.png" class="icons" alt="">
+            </div>
+            <h4>--------OTHER SKILLS--------</h4>
+            <div class="flex-container">
+                <img title="Wordpress" src="images/WordPress_blue_logo.svg" class="icons" alt="">
+                <img title="Photoshop" src="images/ps.png" class="icons" alt="">
+                <img title="XD" src="images/xd.png" class="icons" alt="">
+            </div>
+
         </div>
     </div>
 
     <footer>
         <div class="foot-container" id="footer">
-            <a href="mailto:dhavalverma@live.com" class="email-lnk">Hire me</a>
-            <p>© <span id="year"></span> <a href="https://www.linkedin.com/in/dhaval-verma-919b66b9/" target="_blank">Dhaval Verma</a>. All rights reserved.</p>
+            <a href="mailto:dhavalverma@live.com" class="email-lnk glow">Hire me</a>
+            <p>© <span id="year"></span> <a href="https://www.linkedin.com/in/dhaval-verma-919b66b9/" class="glow" target="_blank">Dhaval Verma</a>. All rights reserved.</p>
         </div>
     </footer>
 
@@ -80,16 +93,18 @@
     <script>
         AOS.init();
         $(".dropdown").on('click', function() {
-            $(".dropdown-content").addClass("croto");
+            $(".dropdown-content").addClass("show");
+        });
+
+        $(".dropdown-content").on("mouseleave", function() {
+            $(".dropdown-content").removeClass("show");
+
         });
 
         var dates = new Date()
         var x = dates.getFullYear();
         console.log(x);
         $('#year').text(x);
-
     </script>
 
-</body>
-
-</html>
+</body></html>
