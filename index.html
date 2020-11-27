@@ -37,49 +37,51 @@
         </div>
     </header>
 
-    <div data-aos="zoom-out" class="top-container">
-        <h1>I'm Dhaval</h1>
-        <p id="life">Frontend Developer</p>
-        <img class="mnt" src="images/mountains.png" alt="mountain-image">
-    </div>
-
-    <div class="middle-container" id="about">
-        <img class="user_pic " src="images/dt.png" alt="dhaval_image">
-        <h2>Hi</h2>
-        <div class="insight">
-            <p>I am an Experienced developer with a demonstrated history of working in web development.
-                Skilled in HTML, CSS(+Sass), JavaScript, jQuery, Angular, Bootstrap, Wordpress, Wireframes, responsive designs and many more.
-                <br><br> I have a passion for web development and love to create for web. </p>
+    <section>
+        <div data-aos="zoom-out" class="top-container">
+            <h1>I'm Dhaval</h1>
+            <p id="life">Frontend Developer</p>
+            <img class="mnt" src="images/mountains.png" alt="mountain-image">
         </div>
-        <hr>
-    </div>
 
-    <div class="bottom-container">
-        <h2>What I can do</h2>
-
-        <div id="images">
-            <div class="flex-container">
-                <img title="Html" src="images/html.png" class="tooltip icons" alt="web_technologies">
-                <img title="Css" src="images/css.png" class="icons" alt="">
-                <img title="Javascript" src="images/js.png" class="icons" alt="">
+        <div class="middle-container" id="about">
+            <img class="user_pic " src="images/dt.png" alt="dhaval_image">
+            <h2>Hi</h2>
+            <div class="insight">
+                <p>I am an Experienced developer with a demonstrated history of working in web development.
+                    Skilled in HTML, CSS(+Sass), JavaScript, jQuery, Angular, Bootstrap, Wordpress, Wireframes, responsive designs and many more.
+                    <br><br> I have a passion for web development and love to create for web. </p>
             </div>
-            <h4>--------FRAMEWORKS & LIBRARIES--------</h4>
-            <div class="flex-container">
-                <img title="Bootstrap" src="images/bstrap.png" class="icons" alt="">
-                <img title="Sass" src="images/sass.png" class="icons" alt="">
-                <img title="Angular" src="images/angular.png" class="icons" alt="">
-                <img title="jQuery" src="images/jq.png" class="icons" alt="">
-            </div>
-            <h4>--------OTHER SKILLS--------</h4>
-            <div class="flex-container">
-                <img title="Wordpress" src="images/WordPress_blue_logo.svg" class="icons" alt="">
-                <img title="Photoshop" src="images/ps.png" class="icons" alt="">
-                <img title="XD" src="images/xd.png" class="icons" alt="">
-            </div>
-
+            <hr>
         </div>
-    </div>
 
+        <div class="bottom-container">
+            <h2>What I can do</h2>
+
+            <div id="images">
+                <div class="flex-container">
+                    <img title="Html" src="images/html.png" class="tooltip icons" alt="web_technologies">
+                    <img title="Css" src="images/css.png" class="icons" alt="">
+                    <img title="Javascript" src="images/js.png" class="icons" alt="">
+                </div>
+                <h4>--------FRAMEWORKS & LIBRARIES--------</h4>
+                <div class="flex-container">
+                    <img title="Bootstrap" src="images/bstrap.png" class="icons" alt="">
+                    <img title="Sass" src="images/sass.png" class="icons" alt="">
+                    <img title="Angular" src="images/angular.png" class="icons" alt="">
+                    <img title="jQuery" src="images/jq.png" class="icons" alt="">
+                </div>
+                <h4>--------OTHER SKILLS--------</h4>
+                <div class="flex-container">
+                    <img title="Wordpress" src="images/WordPress_blue_logo.svg" class="icons" alt="">
+                    <img title="Photoshop" src="images/ps.png" class="icons" alt="">
+                    <img title="XD" src="images/xd.png" class="icons" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
     <footer>
         <div class="foot-container" id="footer">
             <a href="mailto:dhavalverma@live.com" class="email-lnk glow">Hire me</a>
@@ -93,17 +95,15 @@
     <script>
         AOS.init();
         $(".dropdown").on('click', function() {
-            $(".dropdown-content").addClass("show");
+            $(".dropdown-content").toggleClass("show hide");
         });
 
         $(".dropdown-content").on("mouseleave", function() {
             $(".dropdown-content").removeClass("show");
-
         });
 
         var dates = new Date()
         var x = dates.getFullYear();
-        console.log(x);
         $('#year').text(x);
     </script>
 
