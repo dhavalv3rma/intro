@@ -203,6 +203,10 @@ footer p {
     display: block;
 }
 
+.hide {
+    display: none;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -286,5 +290,9 @@ footer p {
         padding: 5px;
         width: 90%;
         line-height: 2rem
+    }
+
+    #images h4 {
+        font-size: 13px;
     }
 }
