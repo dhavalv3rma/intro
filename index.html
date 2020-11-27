@@ -41,7 +41,7 @@
         <div data-aos="zoom-out" class="top-container">
             <h1>I'm Dhaval</h1>
             <p id="life">Frontend Developer</p>
-            <img class="mnt" src="images/mountains.png" alt="mountain-image">
+            <img class="mnt" src="images/mountains.png" style="" alt="mountain-image">
         </div>
 
         <div class="middle-container" id="about">
@@ -96,6 +96,10 @@
         AOS.init();
         $(".dropdown").on('click', function() {
             $(".dropdown-content").toggleClass("show hide");
+        });
+
+        $("section").on("click", function() {
+            $(".dropdown-content").removeClass("show");
         });
 
         $(".dropdown-content").on("mouseleave", function() {
