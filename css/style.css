@@ -25,8 +25,8 @@ h1 {
 h2 {
     color: #33cc33;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    width: 20%;
+    font-size: 34px;
+    width: 100%;
     margin: auto;
 }
 
@@ -55,19 +55,21 @@ a {
     margin: auto;
 }
 
-a:hover {
-    color: #EDE8D4;
-    font-weight: bolder;
+p{
+    font-size: 1.2rem;
+        line-height: 2.4rem;
+
+    
 }
-
-
+.glow:hover {
+    text-shadow: 2px 2px 5px #3ACE3B;
+    transition: 0.5s;
+}
 
 /*/////////////////////////CLASSES//////////////////////*/
 .top-container {
     margin: 0 0 0 0;
     margin-top: 0px;
-    /*    padding-top: 20px;*/
-    /*    padding-bottom: 0px;*/
     height: 90vh;
 }
 
@@ -100,6 +102,12 @@ a:hover {
     margin: 20px;
 }
 
+.insight {
+    margin: auto;
+    padding: 5px;
+    width: 54%;
+}
+
 .bottom-container {
     background-color: #fcf9ec;
     margin: 0px;
@@ -107,11 +115,6 @@ a:hover {
     padding-bottom: 70px;
 }
 
-.insight {
-    margin: auto;
-    padding: 5px;
-    width: 50%;
-}
 
 #images {
     margin: auto;
@@ -121,12 +124,7 @@ a:hover {
 
 .icons {
     margin: 50px;
-    height: 180px;
-}
-
-.icons_jq {
-    width: 28%;
-    margin-bottom: 80px;
+    height: 160px;
 }
 
 .foot-container {
@@ -166,15 +164,13 @@ a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dropdown-content {
-    /*        display: block;*/
-
     display: none;
     position: absolute;
     left: -100%;
-
     background-color: #33cc33;
     color: #ffffff;
     border-radius: 8px;
@@ -182,6 +178,8 @@ a:hover {
     margin: 0 4px 4px 4px;
     min-width: 180px;
     max-width: auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s !important;
     z-index: 1;
 }
 
@@ -197,6 +195,16 @@ a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.show {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tooltip {
@@ -229,9 +237,6 @@ a:hover {
     position: absolute;
 }
 
-.croto {
-    display: block;
-}
 
 #year {
     font-size: 12px;
@@ -246,9 +251,13 @@ a:hover {
         padding: 10 0 10 0;
     }
 
-    .icons_jq {
-        width: 85% !important;
-        margin-bottom: 80px;
+    .icons {
+        margin: 30px;
+        height: 80px;
+    }
+
+    .top-container {
+        height: 88vh;
     }
 
     .top-container h1 {
@@ -259,5 +268,21 @@ a:hover {
     #life {
         font-size: 17px;
         margin: 0 auto 0 auto;
+    }
+
+    .mnt {
+        margin: 0 auto 0 auto;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .insight {
+        margin: auto;
+        padding: 5px;
+        width: 90%;
+        line-height: 2rem
     }
 }
