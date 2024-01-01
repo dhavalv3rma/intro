@@ -46,12 +46,12 @@ hr {
 span {
     font-size: 16px;
     margin: 0px;
-    color: #33cc33;
+    color: #333;
 }
 
 a {
     text-decoration: none;
-    color: #33cc33;
+    color: #333;
     margin: auto;
 }
 
@@ -62,9 +62,11 @@ section p {
 
 }
 
-.glow:hover {
-    text-shadow: 2px 2px 5px #3ACE3B;
+.link:hover {
+    /* text-shadow: 2px 2px 5px #3ACE3B; */
     transition: 0.5s;
+    text-decoration: underline;
+    color: #333;
 }
 
 /*/////////////////////////CLASSES//////////////////////*/
@@ -167,7 +169,7 @@ section p {
     display: none;
     position: absolute;
     left: -100%;
-    background-color: #33cc33;
+    background-color: #7e5b33;
     color: #ffffff;
     border-radius: 8px;
     padding: 12px 0px 12px 0px;
@@ -185,8 +187,7 @@ section p {
 }
 
 .dropdown-content a:hover {
-    color: #EDE8D4;
-    font-weight: bolder;
+    color: #e7e7e7;
 }
 
 .dropdown:hover .dropdown-content {
