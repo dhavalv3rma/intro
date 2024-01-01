@@ -156,7 +156,8 @@ section p {
     font-size: 16px;
     font-family: 'Montserrat', serif;
     margin: 20px;
-    padding: 0px cursor: pointer;
+    padding: 0px;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -270,7 +271,7 @@ section p {
         width: 100%;
         left: 1%;
         right: 1%;
-         -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
     }
 
     .insight {
