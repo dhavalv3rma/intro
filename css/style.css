@@ -121,6 +121,12 @@ section p {
     background-color: #fcf9ec;
     margin: 0px;
     padding-top: 100px;
+    padding-bottom: 50px;
+}
+.post-bottom-container {
+    background-color: #fcf9ec;
+    margin: 0px;
+    padding-top: 0px;
     padding-bottom: 70px;
 }
 
@@ -255,8 +261,12 @@ section p {
     }
 
     .icons {
-        margin: 25px;
-        height: 60px;
+        margin: 20px 25px;
+        height: 84px;
+    }
+
+    .iconText {
+        display: none;
     }
 
     .top-container h1,
