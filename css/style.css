@@ -30,6 +30,10 @@ h2 {
     margin: auto;
 }
 
+h4 {
+    margin-bottom: 25px;
+}
+
 hr {
     height: 2px;
     border-color: grey;
@@ -128,10 +132,27 @@ section p {
 }
 
 .icons {
-    margin: 50px;
+    margin: 25px 45px;
     height: 120px;
 }
 
+.iconBox {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    /* width: 240px; */
+}
+
+.iconText {
+    margin: auto;
+    text-align: center !important;
+    visibility: hidden;
+    display: block;
+}
+
+.icons:hover+.iconText {
+    visibility: visible;
+}
 
 
 .head-container {
@@ -207,6 +228,7 @@ section p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 
@@ -233,8 +255,8 @@ section p {
     }
 
     .icons {
-        margin: 30px;
-        height: 80px;
+        margin: 25px;
+        height: 60px;
     }
 
     .top-container h1,
