@@ -267,6 +267,10 @@ ul, li{
     color: #333;
 }
 
+.scroll-top{
+    
+}
+
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
     #nav-bar {
